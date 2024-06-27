@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+}
+
+.navbar li:hover {
+    background-color: #555;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main content styles */
+.content {
+    padding: 20px;
+    padding-top: 60px;
+    padding-left: 230px;
+    max-width: 100%;
+    overflow-x: hidden; /* Hide horizontal scrollbar if content overflows */
+}
+
+form {
+    max-width: 100%;
+    width: 400px; /* Set a fixed width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style table header */
+.table thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style table body */
+.table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style table row on hover */
+.table tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Style buttons */
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+.btn-warning {
+    background-color: orange;
+}
+
+.btn-success {
+    background-color: forestgreen;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Style the custom button */
+.custom-button {
+    float: right;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+
+/* Style the select */
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    appearance: none; /* Remove default arrow icon */
+    -webkit-appearance: none; /* For older versions of Chrome */
+    -moz-appearance: none; /* For older versions of Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>'); /* Add custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+/* Style the options */
+select option {
+    padding: 10px;
+}
+
